@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node Backend/server.js",
-    "dev": "nodemon Backend/server.js"
+    "dev": "nodemon Backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend/FullStack_Todo && npm run build --prefix Frontend/FullStack_Todo"
   },
   "author": "Selemondev",
   "license": "MIT",
